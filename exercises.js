@@ -17,7 +17,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   */
 
   // Modify the line of code BELOW to run a different exercise
-  exercise_16();
+  exercise_18();
   // Modify the line of code ABOVE to run a different exercise
 }
 
@@ -444,7 +444,10 @@ function exercise_17() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let currentDate = new Date();
+  let dateDiff = currentDate - pastDate;
+  dateDiff = Math.ceil(dateDiff/(1000 * 60 * 60 * 24));
+  ltc(dateDiff);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -475,8 +478,11 @@ function exercise_18() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let beginPlus = "With Plus Operator: ";
+  ltc(beginPlus + msgPart1 + " " + msgPart2 + "!");
 
+  let beginLit = "With Template Literal: ";
+  ltc(`${beginLit}${msgPart1} ${msgPart2}!`)
   // CODE IN THE OPEN LINES ABOVE
 }
 
