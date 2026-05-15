@@ -17,7 +17,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   */
 
   // Modify the line of code BELOW to run a different exercise
-  exercise_18();
+  exercise_19();
   // Modify the line of code ABOVE to run a different exercise
 }
 
@@ -514,7 +514,14 @@ function exercise_19() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  ltc(text.includes("JavaScript"));
+  ltc(text.includes("javascript"));
+
+  /*
+    The method is case sensitive.
+    As such, I believe it is because the words 'JavaScript' and 'javascript' are not the same.
+    I don't remember the numbers but the 'J' and 'j' are different characters in the ASCII map.
+  */
 
   // CODE IN THE OPEN LINES ABOVE
 }
