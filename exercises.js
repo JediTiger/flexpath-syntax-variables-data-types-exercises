@@ -17,7 +17,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   */
 
   // Modify the line of code BELOW to run a different exercise
-  exercise_15();
+  exercise_16();
   // Modify the line of code ABOVE to run a different exercise
 }
 
@@ -386,14 +386,13 @@ function exercise_15() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  let currentDate = Date();
-  let currentDay = currentDate.getFullYear();
-  let currentMonth = currentDate.getFullMonth();
-  let currentYear;
-  ltc(currentDay);
+  let currentDate = new Date();
+  let currentDay = currentDate.getDay();
+  let currentMonth = currentDate.getMonth() + 1;
   ltc(currentMonth);
-  ltc(currentYear);
-
+  ltc(currentDay);
+  ltc(currentDate.getFullYear());
+  
   // CODE IN THE OPEN LINES ABOVE
 }
 
@@ -417,7 +416,8 @@ function exercise_16() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let mybd = new Date(2004,1,1);
+  ltc(mybd.toDateString());
 
   // CODE IN THE OPEN LINES ABOVE
 }
